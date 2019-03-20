@@ -1,15 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700');
+
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size:25px;
+    letter-spacing:-0.01em;
+    font-weight:300;
 }
+.flyer-dev
+{
+    width:100%;
+}
+
 #content{
     margin:10%;
 }
 /* Style tab links */
 .tablink {
-  background-color: #555;
-  color: white;
+  color: black;
   float: left;
   border: none;
   outline: none;
@@ -19,20 +28,47 @@ body, html {
   width: 25%;
 }
 
+.tablink:first-of-type {
+  border-top-left-radius:3px;
+}
+
+.tablink:last-of-type {
+  border-top-right-radius:3px;
+}
+
 .tablink:hover {
-  background-color: #777;
+    text-shadow:1px 1px 10px black;
+}
+
+.selected
+{
+    font-weight:600;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
+  color: black;
   display: none;
   padding: 100px 20px;
   height: 100%;
+border:2px solid black;
+    border-radius:2px;
+    opacity:1;
+    transition:opacity 2s ease-in-out;
+    -webkit-transition: opacity 2s ease-in-out;
 }
 
-#Home {background-color: blue;}
-#event1 {background-color: green;}
-#event2 {background-color: blue;}
-#event3 {background-color: orange;}
-#event4 {background-color: purple;}
+.time
+{
+font-weight:600
+}
+
+.footer-elements{
+    text-align:center;
+}
+
+#Home {}
+#event1 {}
+#event2 {}
+#event3 {}
+#event4 {}
