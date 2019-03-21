@@ -1,5 +1,11 @@
 let presseWindow = document.getElementById("presse-modal"),
-    impressumWindow = document.getElementById("impressum-modal");
+    impressumWindow = document.getElementById("impressum-modal"),
+    loaderWindow = document.getElementById("TOGSloader"),
+    headerLogo = document.getElementById("headerLogo");
+    var scrollPercent = document.documentElement.scrollTop;
+
+
+
 
 function openPage(pageName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
@@ -35,5 +41,13 @@ function closeWindow(){
     presseWindow.style.display = "none"
 }
 
+document.addEventListener("click", clickLogo);
+
+function clickLogo(){
+        document.getElementById("content").style.opacity = "1"
+        headerLogo.classList.remove("big-logo")
+        headerLogo.classList.add("small-logo")
+}
+
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+//document.getElementById("defaultOpen").click();

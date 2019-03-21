@@ -5,32 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://theonlygoodsystem.com/style.css">
+    <link rel="stylesheet" href="style.css">
     <title></title>
 </head>
 
 <body>
     <div id="content-box">
     <header id="header">
-        <a href="#" onclick="openPage('Home', this)" id="defaultOpen"><img class="header-logo" src="media/TOGS-Logo-hq.png" alt="The only good system logo" /></a>
+        <a href="#" onclick="openPage('Home', this)" id="defaultOpen"><img id="headerLogo" class="header-logo big-logo" src="media/TOGS-Logo-hq.png" alt="The only good system logo"/></a>
     </header>
-    <div id="content">
+    <div id="content" style="opacity:0">
 
         <button class="tablink" onclick="openPage('event1', this)"><img class="sound-system-icon" src="media/voidinclub-transparent.png" />
-            <div class="menu-date">19/04</div>
+            <div class="menu-date">FRI 19.04</div>
         </button>
         <button class="tablink" onclick="openPage('event2', this)"><img class="sound-system-icon" src="media/panzer-transparent.png" />
-            <div class="menu-date">20/04</div>
+            <div class="menu-date">SAT 20.04</div>
         </button>
         <button class="tablink" onclick="openPage('event3', this)"><img class="sound-system-icon" src="media/lionsden-transparent.png" />
-            <div class="menu-date">21/04</div>
+            <div class="menu-date">SUN 21.04</div>
         </button>
         <button class="tablink" onclick="openPage('event4', this)"><img class="sound-system-icon" src="media/killasan-transparent.png" />
             <div class="menu-date">SOON...</div>
         </button>
         <div id="Home" class="tabcontent">
             <h1>The only good system is a sound system</h1>
-            <p>Home is where the heart is..</p>
+            <p>Le passage de Lorem Ipsum standard, utilisé depuis 1500
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+Section 1.10.32 du "De Finibus Bonorum et Malorum" de Ciceron (45 av. J.-C.)
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
         </div>
         <div id="event1" class="tabcontent">
             <div class="flex-content">
@@ -60,22 +64,24 @@
                     </p>
                     
                     <div class="content-buttons"><a class="facebook-button" href="https://www.facebook.com/events/2278740665701519/" target="_blank">Facebook event</a><a class="tickets-button" href="https://radialsystem.reservix.de/p/reservix/event/1368937" target="_blank">Buy tickets</a></div>
-                    <h2>Artists and Lecturers</h2>
+                   
 
                 </div>
                 <div class="content-pic"><img src="media/voidinclub-transparent.png" alt="Void Soundsystem" /></div>
-                <p class="content-artists">
+                <div class="content-artists">
+                    <h2>Artists and Lecturers</h2>
                     <a href="https://www.gold.ac.uk/media-communications/staff/henriques/" alt="Julian Henriques" target="_blank">Julian Henriques</a> - <a href="https://riddim.de/" alt="Ellen Köhlings & Pete Lilly" target="_blank">Ellen Köhlings & Pete Lilly</a> - <a href="https://www.akbild.ac.at/Portal/studium/institute/kunst-und-kulturwissenschaften/lehrende/akbild_group.2009-07-16.8134339770/displayCard?DBID=1AF9112EEF7EF4D4" alt="Diedrich Diederichsen" target="_blank">Diedrich Diederichsen</a> - <a href="https://ninjatune.net/artist/the-bug" alt="The Bug" target="_blank">The Bug</a> - <a href="https://www.facebook.com/BigFlowdan/" alt="BigFlowdan" target="_blank">Flowdan</a> - <a href="http://miss-red.com/" alt="Miss Red">Miss Red</a> -
                     <a href="https://www.facebook.com/EquiknoxxMusic/" alt="Equiknoxx" target="_blank">Equiknoxx</a> - <a href="https://grandmixxer.bandcamp.com/" alt="Grandmixxer" target="_blank">Grandmixxer</a> -
-                    <a href="https://www.facebook.com/OssiaOssiaOssia/" alt="Ossia" target="_blank">Ossia</a> - <a href="https://mrmitch.bandcamp.com/" alt="Grandmixxer" target="_blank">Mr.Mitch</a></p>
+                    <a href="https://www.facebook.com/OssiaOssiaOssia/" alt="Ossia" target="_blank">Ossia</a> - <a href="https://mrmitch.bandcamp.com/" alt="Grandmixxer" target="_blank">Mr.Mitch</a></div>
             </div>
         </div>
 
         <div id="event2" class="tabcontent">
             <div class="flex-content">
                 <div class="content-title">
-                <h3>THE ONLY GOOD SYSTEM - OPEN AIR </h3>
-                    <h2>A SOUND TANK CLASH BY NIK NOWAK</h2></div>
+                    <h3>OPEN AIR </h3>
+                    <h2>A SOUND TANK CLASH BY NIK NOWAK</h2>
+                </div>
                 <div class="content-text">
                     <p class="running-order"><span class="time">15:00 </span><span class="ontime">THE MANTIS<br />
                             Operator: Nik Nowak <br />
@@ -100,8 +106,9 @@
                 <div class="content-pic">
                     <img src="media/panzer-transparent.png" alt="Panzer Soundsystem" />
                 </div>
-                <p class="content-artists">
-                    <a href="http://niknowak.de/" alt="Nik Nowak" target="_blank">Nik Nowak</a> - <a href="https://ninjatune.net/artist/infinite-livez" alt="Infinite Livez" target="_blank">Infinite Livez</a> - <a href="https://www.facebook.com/africanwomenarise/" alt="AWA KHIWE" target="_blank">AWA KHIWE</a> - <a href="https://www.facebook.com/DRUNKSHES" alt="SHE'S DRUNK" target="_blank">SHE'S DRUNK</a> - <a href="https://realdetroitche.bandcamp.com/releases" alt="Ché" target="_blank">Ché</a> - <a href="https://www.ctm-festival.de/festival-2019/artists/k-o/lisa-blanning/" alt="Lisa Blanning" target="_blank">Lisa Blanning</a></p>
+                <div class="content-artists">
+                    <h2>Artists and Lecturers</h2>
+                    <a href="http://niknowak.de/" alt="Nik Nowak" target="_blank">Nik Nowak</a> - <a href="https://ninjatune.net/artist/infinite-livez" alt="Infinite Livez" target="_blank">Infinite Livez</a> - <a href="https://www.facebook.com/africanwomenarise/" alt="AWA KHIWE" target="_blank">AWA KHIWE</a> - <a href="https://www.facebook.com/DRUNKSHES" alt="SHE'S DRUNK" target="_blank">SHE'S DRUNK</a> - <a href="https://realdetroitche.bandcamp.com/releases" alt="Ché" target="_blank">Ché</a> - <a href="https://www.ctm-festival.de/festival-2019/artists/k-o/lisa-blanning/" alt="Lisa Blanning" target="_blank">Lisa Blanning</a></div>
             </div>
         </div>
 
@@ -132,8 +139,9 @@
                 <div class="content-pic">
                     <img src="media/lionsden-transparent.png" alt="Lions Den Soundsystem" />
                 </div>
-                <p class="content-artists">
-                    <a href="http://www.caribbeanstudiesassociation.org/carolyn-cooper/" alt="Carolyn Cooper" target="_blank">Carolyn Cooper</a> - <a href="https://www.byte.fm/team/klaus-walter/" alt="Klaus Walter" target="_blank">Klaus Walter</a> - <a href="https://www.carhartt-wip.com/journal/music/radio/2012/07/artist-feature-mark-ernestus-with-tikiman" alt="Mark Ernestus with Tikiman aka Paul St. Hill" target="_blank">Mark Ernestus with Tikiman aka Paul St. Hill</a> - <a href="http://www.throughmyspeakers.com/uta" alt="Uta" target="_blank">Uta</a> - <a href="https://pereraelsewhere.bandcamp.com/" alt="Perera Elsewhere" target="_blank">Perera Elsewhere</a> - <a href="https://www.facebook.com/BerceuseHeroique/" alt="KEMAΛ" target="_blank">KEMAΛ (Berceuse Heroique)</a> - <a href="https://ikonika.bandcamp.com/" alt="Ikonika" target="_blank">Ikonika</a> & <a href="https://scratchadva.bandcamp.com/" alt="Scratcha DVA" target="_blank">Scratcha DVA / DVA Hi:Emotions5</a> - <a href="https://www.mixcloud.com/BCR_Radio/version-13-orson-hops-7-9-2016/" alt="Hops & Orson Version (Version)" target="_blank">Hops & Orson Version (Version)</a></p>
+                <div class="content-artists">
+                    <h2>Artists and Lecturers</h2>
+                    <a href="http://www.caribbeanstudiesassociation.org/carolyn-cooper/" alt="Carolyn Cooper" target="_blank">Carolyn Cooper</a> - <a href="https://www.byte.fm/team/klaus-walter/" alt="Klaus Walter" target="_blank">Klaus Walter</a> - <a href="https://www.carhartt-wip.com/journal/music/radio/2012/07/artist-feature-mark-ernestus-with-tikiman" alt="Mark Ernestus with Tikiman aka Paul St. Hill" target="_blank">Mark Ernestus with Tikiman aka Paul St. Hill</a> - <a href="http://www.throughmyspeakers.com/uta" alt="Uta" target="_blank">Uta</a> - <a href="https://pereraelsewhere.bandcamp.com/" alt="Perera Elsewhere" target="_blank">Perera Elsewhere</a> - <a href="https://www.facebook.com/BerceuseHeroique/" alt="KEMAΛ" target="_blank">KEMAΛ (Berceuse Heroique)</a> - <a href="https://ikonika.bandcamp.com/" alt="Ikonika" target="_blank">Ikonika</a> & <a href="https://scratchadva.bandcamp.com/" alt="Scratcha DVA" target="_blank">Scratcha DVA / DVA Hi:Emotions5</a> - <a href="https://www.mixcloud.com/BCR_Radio/version-13-orson-hops-7-9-2016/" alt="Hops & Orson Version (Version)" target="_blank">Hops & Orson Version (Version)</a></div>
             </div>
         </div>
 
@@ -155,16 +163,19 @@
             <div class="sponsors-logos">
                 <div class="squaring"><img src="media/partners/hkf-logo.png" /></div>
                 <div class="squaring"><img src="media/partners/groove.png" /></div>
-                <div class="squaring"><img src="media/partners/radialsystem.png" /></div>
-                <div class="squaring"><img src="media/partners/yaam.png" /></div>
+                <div class="squaring"><img src="media/partners/bytem-t.png"/></div>
+                <div class="squaring"><img src="media/partners/radialsystem-t.png" /></div>
+                <div class="squaring"><img src="media/partners/yaam-t.png" /></div>
                 <div class="squaring"><img src="media/partners/zuri.png" /></div>
+                
             </div>
             <button class="footer-button" onclick="openImpressum()">impressum</button>
             <button class="footer-button" onclick="openPresse()">presse</button>
         </div>
     </footer>
+    </div>
     <div id="impressum-modal" style="display:none;">
-        <button class="close-button" onclick="closeWindow()">Zurück zur seite</button>
+        <button class="close-button" onclick="closeWindow()">x</button>
         <div class='impressum'>
             <h1>Impressum</h1>
             <p>Angaben gemäß § 5 TMG</p>
@@ -192,33 +203,16 @@
         </div>
     </div>
     <div id="presse-modal" style="display:none;">
-        <button class="close-button" onclick="closeWindow()">Zurück zur seite</button>
+        <button class="close-button" onclick="closeWindow()">x</button>
         <div class='impressum'>
-            <h1>Impressum</h1>
-            <p>Angaben gemäß § 5 TMG</p>
-            <p>Max Muster <br>
-                Musterweg<br>
-                12345 Musterstadt <br>
-            </p>
-            <p> <strong>Vertreten durch: </strong><br>
-                Max Muster<br>
-            </p>
-            <p><strong>Kontakt:</strong> <br>
-                Telefon: 01234-789456<br>
-                Fax: 1234-56789<br>
-                E-Mail: <a href="mailto:max@muster.de">max@muster.de</a><br /></p>
-            <p><strong>Umsatzsteuer-ID: </strong> <br>
-                Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: Musterustid.<br><br>
-                <strong>Wirtschafts-ID: </strong><br>
-                Musterwirtschaftsid<br>
-            </p>
+            <h1>Presse</h1>
             <p><strong>Aufsichtsbehörde:</strong><br>
                 Musteraufsicht Musterstadt<br></p>
             <p><strong>Haftungsausschluss: </strong><br><br><strong>Haftung für Links</strong><br><br>
                 Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p><br>
             Website Impressum erstellt durch <a href="https://www.impressum-generator.de">impressum-generator.de</a> von der <a href="https://www.kanzlei-hasselbach.de/">Kanzlei Hasselbach</a>
         </div>
-    </div></div>
+    </div>
 </body>
 
 </html>

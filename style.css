@@ -158,9 +158,10 @@ html {
     font-weight: 400;
     text-align: center;
     color: black;
-    background-image: url(media/Plakat%20Background.jpg);
+    background-image: url(media/background-comp.jpg);
     background-size: cover;
     background-color: white;
+    background-attachment:fixed;
 }
 
 #content-box{
@@ -171,8 +172,20 @@ html {
 
 button {
     padding: 0;
+    background:none;
+    border:none;
 }
 
+button:focus{
+    outline: none;
+    text-shadow:2px 2px 1px black;
+}
+h1,h2,h3,h4{
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+}
+
+p{font-weight:200;}
 a {
     text-decoration: none;
     color: #9A9070;
@@ -192,7 +205,6 @@ a:hover {
 }
 
 .header-logo {
-    width: 10%;
     margin: auto;
     animation: logo-animation;
     animation-duration: 8s;
@@ -200,13 +212,28 @@ a:hover {
     animation-direction: alternate;
 }
 
-.logo-background {
-    background-image: url(media/TOGS.png);
-    background-size: contain;
+.header-logo:hover{
+    opacity:0.9;
+}
+
+.big-logo
+{   
+    width:40%;
+    transition:width 3s ease-in-out;
+    -webkit-transition:width 3s ease-in-out;
+}
+
+.small-logo
+{
+    width:10%;
+    transition:width 3s ease-in-out;
+    -webkit-transition:width 3s ease-in-out;
 }
 
 #content {
     margin: 1% 5%;
+    transition: opacity 2s ease-in-out;
+    -webkit-transition: opacity 2s ease-in-out;
 }
 
 #defaultOpen {}
@@ -219,12 +246,19 @@ a:hover {
     outline: none;
     cursor: pointer;
     font-size: 1.2em;
-    width: 24%;
+    width: 24.7%;
     background-color: transparent;
+    overflow-wrap:nowrap;
+    position:relative;
+}
+.tablink:last-of-type{
+    width:auto;
+    min-width:24%;
 }
 
 .menu-date {
     display: block;
+    margin-top:5em;
 }
 
 
@@ -233,7 +267,7 @@ a:hover {
 }
 
 .selected .menu-date {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
 
 }
 
@@ -243,10 +277,6 @@ a:hover {
 }
 
 .sound-system-icon:hover {
-    animation: icons-animation;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
     filter: invert(1);
     -webkit-filter: invert(1);
 }
@@ -254,6 +284,9 @@ a:hover {
 .sound-system-icon {
     width: 5.5em;
     height: auto;
+    position:absolute;
+    left: 20%;
+    top: 10%;
 }
 
 
@@ -263,14 +296,12 @@ a:hover {
     height: 100%;
     text-align: left;
     padding: 20px;
-    margin-top: -2px;
     border-radius: 2px;
     opacity: 1;
     transition: opacity 2s ease-in-out;
     -webkit-transition: opacity 2s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    margin: 0 2%;
 }
 
 .flex-content {
@@ -322,19 +353,20 @@ a:hover {
 
 .content-artists {
     order: 4;
+    font-weight: 500;
     flex-basis:100%;
 }
 
 .time {
-    font-weight: 600
+    font-weight: 400
 }
 
 .ontime {
-    font-weight: 300
+    font-weight: 200
 }
 
 .footer-elements {
-    margin: 2% 30%;
+    margin: 2% 6%;
     text-align: center;
 }
 
@@ -345,14 +377,15 @@ a:hover {
     align-content: center;
     align-items: center;
     justify-content: center;
-    background-color:white;
+    background-color:rgba(256,256,256,0.9);
+    border-radius:1em;
     padding:20px 0;
 }
 
 .squaring {
-    width: 15%;
+    width: 12%;
     padding: 5px 4, 5%;
-    margin: 2%;
+    margin: 0 2%;
 }
 
 .squaring img {
@@ -370,22 +403,31 @@ a:hover {
     display: block;
     z-index: 2;
     height:100%;
+    padding:2% 25%;
+    overflow-y: scroll;
+}
+
+.close-button{
+    float:right;
+    font-size:2em;
+    color: #9A9070;
+    border:none;
+    background:none;
+    cursor:pointer;
 }
 
 .footer-button{
-    margin:2em;
+    margin:0.2em;
     font-size:1em;
     font-family: 'Teko', sans-serif;
-    background-color: #2a2a2a;
+    background-color: transparent;
     padding: 0.4em;
-    border-radius: 0.2em;
-    margin-right: 5px;
     color: #9A9070;
     border:none;
     cursor:pointer;
 }
 
-.footer-button:hover{
+.footer-button:hover, .close-button:hover{
      color: #c0b591;
 }
 
@@ -400,3 +442,34 @@ a:hover {
 #event3 {}
 
 #event4 {}
+
+@media screen and (max-device-width: 780px){
+
+    
+.header-logo {
+    width: 30%;
+}
+    .tablink{
+        font-size:1em;
+        width:49%;
+}
+    .content-text{
+        flex-basis:100%;
+        order:2;
+    }
+    
+    .content-pic{
+        flex-basis:100%;
+        order:1;
+    }
+    
+    .footer-elements{
+        margin:1em;
+    }
+    .squaring{
+        width:33%;
+    }
+    .footer-button{
+        margin:5px;
+    }
+}
