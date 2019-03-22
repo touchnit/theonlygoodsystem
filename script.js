@@ -44,9 +44,10 @@ function closeWindow(){
 document.addEventListener("click", clickLogo);
 
 function clickLogo(){
-        document.getElementById("content").style.opacity = "1"
+        document.getElementById("content").style.display = "flex"
         headerLogo.classList.remove("big-logo")
         headerLogo.classList.add("small-logo")
+        document.getElementById("content").classList.add("opacity-on").setTimeout('1000')
 }
 
 // Get the element with id="defaultOpen" and click on it

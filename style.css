@@ -237,7 +237,11 @@ a:hover {
     margin: 1% 5%;
        display:flex;
     flex-wrap:wrap;
-    transition: opacity 2s ease-in-out;
+}
+
+.opacity-on{
+    opacity:1 !important;
+      transition: opacity 2s ease-in-out;
     -webkit-transition: opacity 2s ease-in-out;
 }
 
@@ -279,7 +283,7 @@ a:hover {
 .icon-squaring{
     position:absolute; 
     left:50%;
-    top:10%;
+    top:15%;
 }
 .selected {
     font-weight: 600;
