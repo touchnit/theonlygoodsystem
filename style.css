@@ -162,6 +162,7 @@ html {
     background-size: cover;
     background-color: white;
     background-attachment:fixed;
+    scroll-behavior:smooth;
 }
 
 #content-box{
@@ -259,6 +260,7 @@ a:hover {
 .menu-date {
     display: block;
     margin-top:5em;
+    padding-top:0.5em;
 }
 
 
@@ -282,11 +284,11 @@ a:hover {
 }
 
 .sound-system-icon {
+    position: relative; 
     width: 5.5em;
     height: auto;
-    position:absolute;
-    left: 20%;
     top: 10%;
+    left: -50%;
 }
 
 
@@ -377,15 +379,13 @@ a:hover {
     align-content: center;
     align-items: center;
     justify-content: center;
-    background-color:rgba(256,256,256,0.9);
-    border-radius:1em;
     padding:20px 0;
 }
 
 .squaring {
-    width: 12%;
+    width: 9.5%;
     padding: 5px 4, 5%;
-    margin: 0 2%;
+    margin: 0 1%;
 }
 
 .squaring img {
@@ -471,5 +471,10 @@ a:hover {
     }
     .footer-button{
         margin:5px;
+    }
+    
+    .tablink:last-of-type
+{
+    min-width:49%;
     }
 }
