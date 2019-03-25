@@ -168,8 +168,6 @@ html {
 #content-box{
     max-width:1280px;
     margin:auto;
- 
-    
 }
 
 button {
@@ -229,8 +227,8 @@ a:hover {
 .small-logo
 {
     width:10%;
-    transition:width 3s ease-in-out;
-    -webkit-transition:width 3s ease-in-out;
+    transition:width 1s ease-in-out;
+    -webkit-transition:width 1s ease-in-out;
 }
 
 #content {
@@ -265,13 +263,18 @@ a:hover {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-.tablink:last-of-type{
-    /*width:auto;
-    min-width:24%;*/
-}
 
 .tablink:hover{
     background-color:rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+}
+
+.tablink:hover .sound-system-icon {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    transition: filter 0.3s ease;
+    -webkit-transition: filter 0.3s ease;
 }
 
 .menu-date {
