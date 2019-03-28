@@ -1,10 +1,8 @@
-let presseWindow = document.getElementById("presse-modal"),
-    impressumWindow = document.getElementById("impressum-modal"),
+let presseWindow = document.getElementById("presse"),
+    impressumWindow = document.getElementById("impressum"),
     loaderWindow = document.getElementById("TOGSloader"),
-    headerLogo = document.getElementById("headerLogo");
+    headerLogo = document.getElementById("header-squaring");
     var scrollPercent = document.documentElement.scrollTop;
-
-
 
 
 function openPage(pageName, elmnt, color) {
@@ -18,7 +16,6 @@ function openPage(pageName, elmnt, color) {
   // Remove the background color of all tablinks/buttons
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
     tablinks[i].classList.remove("selected");
   }
 
@@ -41,13 +38,15 @@ function closeWindow(){
     presseWindow.style.display = "none"
 }
 
-document.addEventListener("click", clickLogo);
+headerLogo.addEventListener("click", clickLogo);
 
 function clickLogo(){
         document.getElementById("content").style.display = "flex"
         headerLogo.classList.remove("big-logo")
         headerLogo.classList.add("small-logo")
-        document.getElementById("content").classList.add("opacity-on").setTimeout('1000')
+        //headerLogo.setAttribute("height", "18%")
+        //headerLogo.setAttribute("width", "18%")
+        setTimeout(document.getElementById("content").classList.add("opacity-on"), 1000);
 }
 
 // Get the element with id="defaultOpen" and click on it
