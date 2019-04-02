@@ -74,12 +74,13 @@ a:hover {
 }
 
 #header {
-    padding-top: 2em;
     flex-basis:100%;
+    padding-top:1em;
 }
 
 #header-squaring{
     text-align:center;
+    align-items:center;
 }
 
 #header-logo {
@@ -295,7 +296,7 @@ transform: translateZ(0);
     align-items: center;
     justify-content: center;
     padding:10vw 0;
-    margin: 0 15%;
+    margin: 0 20%;
 }
 
 .squaring {
@@ -438,7 +439,7 @@ body{
     }
 
     .sponsors-logos{
-        margin:0 1%;
+        margin:0 15%;
     }
 
 

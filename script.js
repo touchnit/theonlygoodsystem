@@ -31,6 +31,7 @@ headerLogo.addEventListener("click", clickLogo);
 
 function clickLogo(){
         document.getElementById("content").style.display = "flex"
+        document.getElementById("footer").style.display = "flex"
         headerLogo.classList.remove("big-logo")
         headerLogo.classList.add("small-logo")
         setTimeout(document.getElementById("content").classList.add("opacity-on"), 1000);
