@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700');
 
-
 @keyframes logoAnimation {
 0%{
     height:45vw;
@@ -102,8 +101,6 @@ a:hover {
     animation:logoAnimation;
     animation-duration:1s;
     animation-timing-function: ease-in-out;
-   /*transition:height 1s ease-in-out;
-     -webkit-transition:height 1s ease-in-out;*/
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
@@ -113,8 +110,6 @@ a:hover {
 
 .big-logo{
     height:48vw;
-    /*transition:height 1s ease-in-out;
-    -webkit-transition:height 1s ease-in-out;*/
     -webkit-transform: translateZ(0);
 -moz-transform: translateZ(0);
 -ms-transform: translateZ(0);
@@ -135,6 +130,32 @@ transform: translateZ(0);
 }
 
 #defaultOpen {}
+
+.quote, .quote-author, .description, .artists{
+    display:block;
+    margin-top:2vw;
+}
+
+.quote{
+    font-style:italic;
+    font-weight:100;
+    text-align:justify;
+}
+
+.quote-author{
+    font-weight:300;
+    text-align:right;
+}
+
+.description{
+    font-weight:200;
+    text-align:justify;
+}
+
+.artists{
+    font-weight:400;
+    text-align:justify;
+}
 
 /* Style tab links */
 .tablink {
@@ -193,6 +214,10 @@ transform: translateZ(0);
     -webkit-filter: invert(1);
 }
 
+.unselected{
+    opacity:0.2;
+}
+
 .sound-system-icon:hover {
     filter: invert(1);
     -webkit-filter: invert(1);
@@ -211,8 +236,7 @@ transform: translateZ(0);
 .tabcontent {
     display: none;
     height: 100%;
-    text-align: left;
-    padding: 20px;
+    padding: 1.5em;
     border-radius: 2px;
     opacity: 1;
     transition: opacity 2s ease-in-out;
@@ -233,8 +257,32 @@ transform: translateZ(0);
 
 .content-text {
     order: 1;
+    text-align:left;
     flex-basis: 50%;
     display:inline-block;
+}
+
+.content-text-panzer {
+    flex-basis: 100%;
+    display:inline-block;
+    text-align:justify;
+}
+
+.panzer1{
+    display:inline-block;
+    text-align:center;
+    flex-basis:45%;
+}
+
+.versus{
+    flex-basis:10%;
+    font-weight:700;
+    font-size:2em;
+}
+
+.panzer-name{
+    font-weight:600;
+    font-size:2em;
 }
 .content-buttons{
     
@@ -248,7 +296,15 @@ transform: translateZ(0);
     width: 100%;
 }
 
-.content-pic img {
+.content-pic-panzer {
+    order:0;
+    padding:10%;
+    flex-basis:80%;
+    display: inline-block;
+    width: 100%;
+}
+
+.content-pic img, .content-pic-panzer img  {
     width: inherit;
     filter: invert(1);
     -webkit-filter: invert(1);
@@ -288,6 +344,25 @@ transform: translateZ(0);
     text-align: center;
 }
 
+
+#footer-logo-squaring{
+    display:none;
+    text-align:center;
+    align-items:center;
+    padding:0 40%;
+}
+
+#foooter-logo {
+    transition:fill 0.3s ease;
+    -webkit-transition:fill 0.3s ease;
+}
+
+#footer-logo:hover path{
+    fill:#a8a088 !important;
+    transition:fill 1s ease;
+    -webkit-transition:fill 1s ease;
+}
+
 .sponsors-logos {
     text-align: center;
     display: flex;
@@ -295,7 +370,7 @@ transform: translateZ(0);
     align-content: center;
     align-items: center;
     justify-content: center;
-    padding:10vw 0;
+    padding:1vw 0;
     margin: 0 20%;
 }
 
@@ -380,10 +455,6 @@ body{
     background-color:black !important;
     }
 
- /*   .sound-system-icon {
-    width: 5em;
-}*/
-    
     .content-text{
         flex-basis:100%;
         order:2;
@@ -403,7 +474,9 @@ body{
 }
 
 @media screen and (max-device-width: 450px){
-
+    .close-button{
+        font-size:1.5em;
+    }
     .body{
     background-size: cover;
     background-attachment:fixed;

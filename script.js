@@ -4,7 +4,7 @@ let presseWindow = document.getElementById("presse"),
     headerLogo = document.getElementById("header-squaring");
     var scrollPercent = document.documentElement.scrollTop;
 
-function openPage(pageName, elmnt, color) {
+function openPage(pageName, elmnt) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -13,9 +13,18 @@ function openPage(pageName, elmnt, color) {
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].classList.remove("selected");
+    tablinks[i].classList.remove("unselected");
   }
   document.getElementById(pageName).style.display = "block";
   elmnt.classList.add("selected");
+ for (i = 0; i < tablinks.length; i++)
+ {  
+    if (tablinks[i].classList.contains("selected")) {//do nothing
+    } 
+    else {
+      tablinks[i].classList.add("unselected")
+    };
+}
 }
 function openImpressum(){
     impressumWindow.style.display = "block"
@@ -36,3 +45,5 @@ function clickLogo(){
         headerLogo.classList.add("small-logo")
         setTimeout(document.getElementById("content").classList.add("opacity-on"), 1000);
 }
+
+//document.getElementById("defaultOpen").click
