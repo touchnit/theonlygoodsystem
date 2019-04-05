@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700');
-
 @keyframes logoAnimation {
 0%{
     height:45vw;
 }
 100%{
-    height:20vw;
+    height:8vw;
 }
 }
 
@@ -25,10 +22,7 @@ body,
 html {
     height: 100%;
     margin: 0;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    text-align: center;
+    font-size: 20px;
     color: black;
     background-image: url(media/background-comp.jpg);
     background-size: cover;
@@ -42,6 +36,24 @@ html {
     margin:auto;
 }
 
+/*#event1{
+    filter: invert(23%) sepia(67%) saturate(2246%) hue-rotate(332deg) brightness(101%) contrast(94%);
+}
+
+#event2{
+    filter: invert(76%) sepia(15%) saturate(2720%) hue-rotate(27deg) brightness(96%) contrast(80%);
+}
+
+#event3{
+    filter: invert(32%) sepia(78%) saturate(3201%) hue-rotate(176deg) brightness(100%) contrast(101%);
+}
+
+#event4{
+    filter: invert(73%) sepia(88%) saturate(2178%) hue-rotate(3deg) brightness(102%) contrast(102%);
+}*/
+
+
+
 button {
     padding: 0;
     background:none;
@@ -53,18 +65,27 @@ button:focus{
     text-shadow:2px 2px 1px black;
 }
 h1,h2,h3,h4{
+    font-family: cubano, sans-serif;
     text-transform:uppercase;
-    letter-spacing:0.04em;
+    letter-spacing:0.07em;
+    margin:0;
 }
 
-p{font-weight:200;}
+p{
+    font-family: vista-sans-narrow, sans-serif;
+    letter-spacing: 0.02em;
+    font-weight:200;
+    margin-top:1vw;
+}
 a {
     text-decoration: none;
     color: #9A9070;
 }
 
 a:hover {
-    color: #c0b591;
+    color: #c0b591 !important;
+    transition:color 0.5s ease;
+    -webkit-transition:color 0.5s ease;
 }
 
 .flyer-dev {
@@ -97,7 +118,7 @@ a:hover {
 
 .small-logo
 {
-    height:20vw;
+    height:8vw;
     animation:logoAnimation;
     animation-duration:1s;
     animation-timing-function: ease-in-out;
@@ -129,37 +150,9 @@ transform: translateZ(0);
     -webkit-transition: opacity 2s ease-in-out;
 }
 
-#defaultOpen {}
-
-.quote, .quote-author, .description, .artists{
-    display:block;
-    margin-top:2vw;
-}
-
-.quote{
-    font-style:italic;
-    font-weight:100;
-    text-align:justify;
-}
-
-.quote-author{
-    font-weight:300;
-    text-align:right;
-}
-
-.description{
-    font-weight:200;
-    text-align:justify;
-}
-
-.artists{
-    font-weight:400;
-    text-align:justify;
-}
 
 /* Style tab links */
 .tablink {
-    font-family: 'Teko', sans-serif;
     display:inline-block;
     color: white;
     border: none;
@@ -190,9 +183,10 @@ transform: translateZ(0);
 }
 
 .menu-date {
+    font-family: cubano, sans-serif;
     display: block;
-    margin-top:5em;
-    padding-top:0.2em;
+    margin-top:5.5em;
+    padding:0.5em;
 }
 
 .icon-squaring{
@@ -204,9 +198,24 @@ transform: translateZ(0);
     font-weight: 600;
 }
 
+.selected.event1{
+
+}
+
+.selected.event2{
+    
+}
+
+.selected.event3{
+    
+}
+
+.selected.event4{
+    
+}
+
 .selected .menu-date {
     background-color: rgba(0, 0, 0, 0.6);
-
 }
 
 .selected .sound-system-icon {
@@ -215,7 +224,6 @@ transform: translateZ(0);
 }
 
 .unselected{
-    opacity:0.2;
 }
 
 .sound-system-icon:hover {
@@ -246,17 +254,110 @@ transform: translateZ(0);
     flex-basis:100%;
 }
 
+/* Homepage style */
+
+#defaultOpen {}
+
+#home {
+    background-color: transparent !important;
+}
+
+#home h1
+{
+    text-align:center;
+}
+.quote, .quote-author, .description, .artists{
+    display:block;
+    margin-top:2vw;
+}
+
+.quote{
+    font-style:italic;
+    font-weight:200;
+    text-align:justify;
+    font-size: 1.3em;
+}
+
+.quote-author{
+    font-weight:300;
+    text-align:right;
+}
+
+.description{
+    font-weight:200;
+    text-align:justify;
+}
+
+.artists{
+    font-family: cubano, sans-serif;
+    font-weight:500;
+    text-align:justify;
+}
+
+/* Each event specific colour */
+
+#event1 .coloured, #event1 .content-buttons, #event1 a {
+    color: #cf2f3f;
+}
+
+#event2 .coloured, #event2 .content-buttons, #event2 a {
+    color: #94c11a;
+}
+
+#event3 .coloured, #event3 .content-buttons, #event3 a {
+    color: #008ec8;
+}
+
+#event4 .coloured, #event4 .content-buttons, #event4 a {
+    color: #fbb900;
+}
+
 .flex-content {
     display: flex;
     flex-wrap: wrap;
 }
 
+.left-col{
+    flex-basis:47%;
+    margin: 0% 1.5%;
+}
+
+.right-col{
+    flex-basis:47%;
+    margin: 0% 1.5%;
+}
+.all-col{
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+    margin: 0 1.5%;
+    margin-top:1vw;
+}
+
+.all-col h4{
+    display:block;
+    width:100%;
+}
+
 .content-title {
     flex-basis: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom:2vw;
+}
+
+.content-title .left-col{
+    text-align:right;
+}
+.location{
+    display:block;
 }
 
 .content-text {
     order: 1;
+    font-weight:200 !important;
+    letter-spacing: 0.02em;
+    line-height:1.4em;
     text-align:left;
     flex-basis: 50%;
     display:inline-block;
@@ -284,16 +385,17 @@ transform: translateZ(0);
     font-weight:600;
     font-size:2em;
 }
-.content-buttons{
-    
-}
+
 
 .content-pic {
     order:2;
-    padding:2%;
-    flex-basis:46%;
     display: inline-block;
     width: 100%;
+}
+
+.running-order{
+    font-family: cubano, sans-serif;
+    letter-spacing:0.04em;
 }
 
 .content-pic-panzer {
@@ -305,17 +407,26 @@ transform: translateZ(0);
 }
 
 .content-pic img, .content-pic-panzer img  {
+    margin-bottom: 2vw;
     width: inherit;
     filter: invert(1);
     -webkit-filter: invert(1);
+    padding: 2%;
+    width: 96%;
+}
+
+.content-buttons{
+    margin:15px 0;
+    text-align:center;
 }
 
 .facebook-button, .tickets-button {
-    font-family: 'Teko', sans-serif;
+    font-family: cubano, sans-serif;
     background-color: #2a2a2a;
-    padding: 0.4em;
-    border-radius: 0.2em;
-    margin-right: 5px;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    margin-top: 10px;
+    display: block;
 }
 
 .facebook-button:hover, .tickets-button:hover {
@@ -332,6 +443,8 @@ transform: translateZ(0);
 }
 
 .time {
+    display: inline-block;
+    margin-top:10px;
     font-weight: 400
 }
 
@@ -342,8 +455,8 @@ transform: translateZ(0);
 .footer-elements {
     margin: 2% 6%;
     text-align: center;
+    width:100%;
 }
-
 
 #footer-logo-squaring{
     display:none;
@@ -369,26 +482,34 @@ transform: translateZ(0);
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    justify-content: center;
-    padding:1vw 0;
-    margin: 0 20%;
+    justify-content: space-between;
+    padding:1vw 3%;
+}
+
+.hkf-sponsor
+{
+    text-align:center;
+    color:#9A9070;
+    font-weight:200;
+    font-size:0.7em;
+}
+
+.hkf-sponsor img{
+    height:5vw;
+    margin-top:1vw;
+    margin-bottom:2vw;
 }
 
 .squaring {
-    width: 9.5%;
-    padding: 5px 4, 5%;
-    margin: 0 1%;
 }
 
 .squaring img {
-    width: 100%;
-    height: auto;
+    height:2.5vw;
 }
 
 #impressum, #presse {
     text-align:left;
     font-size:1em;
-   
     background-color: white;
     position: fixed;
     top: 0;
@@ -416,7 +537,7 @@ transform: translateZ(0);
 .footer-button{
     margin:0.2em;
     font-size:1em;
-    font-family: 'Teko', sans-serif;
+    font-family: cubano, sans-serif;
     background-color: transparent;
     padding: 0.4em;
     color: #9A9070;
@@ -428,9 +549,6 @@ transform: translateZ(0);
      color: #c0b591;
 }
 
-#Home {
-    background-color: transparent !important;
-}
 
 #event1 {}
 
@@ -477,6 +595,10 @@ body{
     .close-button{
         font-size:1.5em;
     }
+
+    .left-col, .right-col{
+        flex-basis:97%
+    }
     .body{
     background-size: cover;
     background-attachment:fixed;
@@ -488,8 +610,6 @@ body{
         flex-basis:50%;
     } 
 
-    h1, h2, h3, h4 {
-    font-size: 1.5em;}
 
     p{
         font-size:16px;
