@@ -36,21 +36,21 @@ html {
     margin:auto;
 }
 
-/*#event1{
-    filter: invert(23%) sepia(67%) saturate(2246%) hue-rotate(332deg) brightness(101%) contrast(94%);
+#event1 .content-pic img{
+    filter: brightness(0) saturate(100%) invert(23%) sepia(67%) saturate(2246%) hue-rotate(332deg) brightness(101%) contrast(94%);
 }
 
-#event2{
-    filter: invert(76%) sepia(15%) saturate(2720%) hue-rotate(27deg) brightness(96%) contrast(80%);
+#event2 .content-pic img{
+    filter: brightness(0) saturate(100%)  invert(76%) sepia(15%) saturate(2720%) hue-rotate(27deg) brightness(235%) contrast(80%);
 }
 
-#event3{
-    filter: invert(32%) sepia(78%) saturate(3201%) hue-rotate(176deg) brightness(100%) contrast(101%);
+#event3 .content-pic img{
+    filter: brightness(0) saturate(100%)  invert(32%) sepia(78%) saturate(3201%) hue-rotate(176deg) brightness(100%) contrast(101%);
 }
 
-#event4{
-    filter: invert(73%) sepia(88%) saturate(2178%) hue-rotate(3deg) brightness(102%) contrast(102%);
-}*/
+#event4 .content-pic img{
+    filter: brightness(0) saturate(100%)  invert(73%) sepia(88%) saturate(2178%) hue-rotate(3deg) brightness(102%) contrast(102%);
+}
 
 
 
@@ -318,13 +318,20 @@ transform: translateZ(0);
 }
 
 .left-col{
+    padding-top:1vw;
     flex-basis:47%;
-    margin: 0% 1.5%;
+    margin: 0% 1%;
 }
-
+.brush-col{
+    flex-basis:1%;
+}
+.brush-col img{
+    width: 70%;
+}
 .right-col{
     flex-basis:47%;
-    margin: 0% 1.5%;
+    margin: 0% 1%;
+    padding-top: 0.5vw;
 }
 .all-col{
     display: flex;
@@ -337,6 +344,7 @@ transform: translateZ(0);
 .all-col h4{
     display:block;
     width:100%;
+    max-height: 8vw;
 }
 
 .content-title {
@@ -409,8 +417,6 @@ transform: translateZ(0);
 .content-pic img, .content-pic-panzer img  {
     margin-bottom: 2vw;
     width: inherit;
-    filter: invert(1);
-    -webkit-filter: invert(1);
     padding: 2%;
     width: 96%;
 }
@@ -483,7 +489,7 @@ transform: translateZ(0);
     align-content: center;
     align-items: center;
     justify-content: space-between;
-    padding:1vw 3%;
+    padding:1vw 5%;
 }
 
 .hkf-sponsor
@@ -504,7 +510,7 @@ transform: translateZ(0);
 }
 
 .squaring img {
-    height:2.5vw;
+    height:1.5vw;
 }
 
 #impressum, #presse {
