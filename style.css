@@ -396,7 +396,6 @@ width:63%;
 }
 
 .panzer-name{
-    font-weight:600;
     font-size:2em;
 }
 
@@ -508,7 +507,7 @@ width:63%;
 }
 
 .hkf-sponsor img{
-    height:5vw;
+    height:7.5vw;
     margin-top:1vw;
     margin-bottom:2vw;
 }
