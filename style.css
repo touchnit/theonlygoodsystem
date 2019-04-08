@@ -58,7 +58,7 @@ p{
     font-family: vista-sans-narrow, sans-serif;
     letter-spacing: 0.02em;
     font-weight:400;
-    margin-top:1vw;
+    margin-top:0;
 }
 a {
     text-decoration: none;
@@ -148,7 +148,7 @@ a:hover {
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1em;
     flex-basis: 25%;
     width:25%;
     overflow-wrap:nowrap;
@@ -189,8 +189,8 @@ a:hover {
 }
 
 .date-centering{
-margin:3% 25%;
-width:50%;
+margin:3% 34%;
+width:63%;
 }
 /*
 .date-centering{
@@ -306,19 +306,19 @@ width:50%;
 
 /* Each event specific colour */
 
-#event1 .coloured, #event1 .content-buttons, #event1 a {
+#event1 .coloured, #event1 .content-buttons, #event1 a, .event1.selected .menu-date-day {
     color: #cf2f3f;
 }
 
-#event2 .coloured, #event2 .content-buttons, #event2 a {
+#event2 .coloured, #event2 .content-buttons, #event2 a, .event2.selected .menu-date-day {
     color: #94c11a;
 }
 
-#event3 .coloured, #event3 .content-buttons, #event3 a {
+#event3 .coloured, #event3 .content-buttons, #event3 a, .event3.selected .menu-date-day {
     color: #008ec8;
 }
 
-#event4 .coloured, #event4 .content-buttons, #event4 a {
+#event4 .coloured, #event4 .content-buttons, #event4 a, .event4.selected .menu-date-day {
     color: #fbb900;
 }
 
@@ -328,7 +328,7 @@ width:50%;
 }
 
 .left-col{
-    padding-top:1vw;
+    padding-top:0.5vw;
     flex-basis:47%;
     margin: 0% 1%;
 }
@@ -379,24 +379,20 @@ width:50%;
     flex-basis: 50%;
     display:inline-block;
 }
-
+.centered{
+    text-align:center !important;
+}
+.smaller{
+    font-size:0.7em;
+}
 .content-text-panzer {
     flex-basis: 100%;
     display:inline-block;
     text-align:center;
 }
 
-.panzer1{
-    display:inline-block;
-    text-align:center;
-    flex-basis:45%;
-}
-
-.versus{
-    flex-basis:10%;
-    font-weight:700;
-    font-size:2em;
-    text-align:center;
+.panzer-lineup{
+  text-align:center;
 }
 
 .panzer-name{
@@ -412,6 +408,7 @@ width:50%;
 }
 
 .running-order{
+    width: 100%;
     font-family: cubano, sans-serif;
     letter-spacing:0.04em;
     display:inline-block;
@@ -467,7 +464,6 @@ width:50%;
 }
 
 .ontime {
-    font-weight: 200
 }
 
 .footer-elements {
@@ -508,7 +504,6 @@ width:50%;
 {
     text-align:center;
     color:#9A9070;
-    font-weight:200;
     font-size:0.7em;
 }
 
@@ -540,7 +535,6 @@ width:50%;
 }
 
 #impressum p, #presse p{
-     font-weight:300 !important;
 }
 
 .close-button{
@@ -578,7 +572,7 @@ width:50%;
 
 @media screen and (max-device-width: 780px){
 body{
-        font-size:20px;
+    font-size:16px;
     }
     .header-logo {
     width: 30%;
@@ -610,27 +604,12 @@ body{
 }
 
 @media screen and (max-device-width: 450px){
-    .close-button{
-        font-size:1.5em;
-    }
-
-    .left-col, .right-col{
-        flex-basis:97%
-    }
+    
     .body{
     background-size: cover;
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
-    }
-    .tablink{
-        font-size:1em;
-        flex-basis:50%;
-    } 
-
-
-    p{
-        font-size:16px;
     }
 
     .big-logo{
@@ -643,14 +622,64 @@ body{
     animation-timing-function: ease-in-out;
     }
 
+    .close-button{
+        font-size:1.5em;
+    }
+
+    .left-col, .right-col{
+        flex-basis:100%;
+        text-align: center !important;
+    }
+    .brush-col{
+        display:none;
+    }
+
+    .location:first-of-type::before{
+        content:"at ";
+        font-size:0.5em;
+        color: #ffffff;
+    }
+
+    .location:nth-child(2)::before{
+        content:"& ";
+        color: #ffffff;
+        font-size:0.5em;
+    }
+
+    .tablink{
+        flex-basis:50%;
+    }
+
+    .date-centering{
+        width: 60%;
+        margin: 5% 20%;
+    }
+    
+    .tabcontent{
+        padding: 0.8em;
+
+    }
+
+    p{
+        font-size:16px;
+    }
+    
     .squaring{
         margin: 0 2%;
         flex-basis:21%;
         width:100%;
     }
 
+    .squaring img{
+        height:4vw;
+    }
+
+    .hkf-sponsor img{
+        height:20vw;
+    }
+
     .sponsors-logos{
-        margin:0 15%;
+        margin:0 0%;
     }
 
 
