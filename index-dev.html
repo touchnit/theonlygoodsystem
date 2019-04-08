@@ -19,10 +19,11 @@
     <defs>
         <rect id="TOGSLOGO1" x="-104" y="-91.89" width="595.276" height="841.89"/>
         <filter id="dropshadow" x="0" y="0" width="200%" height="200%">
-            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="5" />
-            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+            <feDropShadow stdDeviation="0 0" in="blur" dx="10" dy="10" flood-color="#000000" flood-opacity="1" x="0%" y="0%" width="300%" height="300%" result="dropShadow"/>
         </filter>
     </defs>
+     <animate xlink:href="#dropshadow" attributeName="stdDeviation"
+    from="0" to="30" dur="1s" begin="0s" repeatCount="1"/>
     <clipPath id="TOGSLOGO2">
         <use xlink:href="#TOGSLOGO1"  overflow="visible"/>
     </clipPath>
@@ -153,25 +154,31 @@
 
     <div id="content" style="display:none; opacity:0;">
         <button class="tablink event1" onclick="openPage('event1', this)">
-            <div class="icon-squaring">
-                <img class="sound-system-icon" src="media/voidinclub-transparent.png" />
+            <div class="date-centering">
+                <div class="menu-date-day">FRI</div>
+                <div class="menu-date">19.4.</div>
             </div>
-            <div class="menu-date">FRI 19.4.</div>
         </button>
 
         <button class="tablink event2" onclick="openPage('event2', this)">
-            <div class="icon-squaring"><img class="sound-system-icon" src="media/panzer-transparent.png" /></div>
-            <div class="menu-date">SAT 20.4.</div>
+            <div class="date-centering">
+                <div class="menu-date-day">SAT</div>
+                <div class="menu-date">20.4.</div>
+            </div>
         </button>
 
         <button class="tablink event3" onclick="openPage('event3', this)">
-            <div class="icon-squaring"><img class="sound-system-icon" src="media/lionsden-transparent.png" /></div>
-            <div class="menu-date">SUN 21.4.</div>
+            <div class="date-centering">
+                <div class="menu-date-day">SUN</div>
+                <div class="menu-date">21.4.</div>
+            </div>
         </button>
 
         <button class="tablink event4" onclick="openPage('event4', this)">
-            <div class="icon-squaring"><img class="sound-system-icon" src="media/killasan-transparent.png" /></div>
-            <div class="menu-date">SOON...</div>
+            <div class="date-centering">
+                <div class="menu-date-day"><br/></div>
+                <div class="menu-date">SOON...</div>
+            </div>
         </button>
         <!-- 
  *+++++++++++++++++++++++++++*
@@ -217,12 +224,11 @@ The Only Good System... is dedicated to the history and present of bass culture.
                 </div>
                 <div class="right-col">
                     <div class="content-text">
-                    <p class="">The festival opens with a lecture by Julian Henriques (Goldsmiths, University of London), author of the groundbreaking standard work Sonic Bodies. Reggae Sound Systems, Performance Techniques, and Ways of Knowing (2011). Julian Henriques' keynote speech Sound System as System of Sound: Street Cultures and Crossovers will begin by exploring the street technology of the sound system and the tacit, embodied ways of knowing displayed by engineers and crew members. Moderation by Ellen Köhlings & Pete Lilly<br/>
-                        <br/>
-                    Diedrich Diederichsen, German author, cultural critic, and Professor for Theory, Practice and Communication of Contemporary Art at the Academy of Fine Arts in Vienna played dancehall and roots reggae together with Gerd Gummersbach as part of the DJ duo Dreadbeat until the mid-1990s. In his lecture Amor vacui: the Ghosts Uptown in Firehouse and its Vibrations, he will explore the question of who lives in the subject's house after dub has scared all the residents away.  Moderation by Pascal Jurt.<br/>
-                        <br/>
-                    At the first night The Bug presents a 'PRESSURE' Special on a Void Incubus Rig. He will play with grime forefather Flowdan and the Israeli dancehall MC MISS RED. He also invited Equiknoxx live (Gavsborg & Time Cow) to perform an instrumental dub session in the style of their two incredible albums. And he sent for grime veteran Grandmixxer, the Bristolian OSSIA, and Mr. Mitch who will perform one of his infamous 'techno dancehall' sets.
-                    </p>
+                    <p class="running-order">19:00 <span class="coloured">FESTIVAL OPENING</span></p>
+                    <p><span class="running-order">20:00 <span class="coloured">LECTURE</span> JULIAN HENRIQUES</span><br/>The festival opens with a lecture by Julian Henriques (Goldsmiths, University of London), author of the groundbreaking standard work Sonic Bodies. Reggae Sound Systems, Performance Techniques, and Ways of Knowing (2011). Julian Henriques' keynote speech Sound System as System of Sound: Street Cultures and Crossovers will begin by exploring the street technology of the sound system and the tacit, embodied ways of knowing displayed by engineers and crew members. <span class="coloured">Moderation by Ellen Köhlings & Pete Lilly</span><p/>
+                    <p><span class="running-order">21:00 <span class="coloured">LECTURE</span> DIEDRICH DIEDERICHSEN</span><br/>Diedrich Diederichsen, German author, cultural critic, and Professor for Theory, Practice and Communication of Contemporary Art at the Academy of Fine Arts in Vienna played dancehall and roots reggae together with Gerd Gummersbach as part of the DJ duo Dreadbeat until the mid-1990s. In his lecture Amor vacui: the Ghosts Uptown in Firehouse and its Vibrations, he will explore the question of who lives in the subject's house after dub has scared all the residents away. <span class="coloured">Moderation by Pascal Jurt</span><p/>
+                    <p> <span class="running-order">23:00 - 04:00 <span class="coloured">THE BUG PRESENTS A PRESSURE SPECIAL</span></span><br/>
+                    At the first night The Bug presents a 'PRESSURE' Special on a Void Incubus Rig. He will play with grime forefather Flowdan and the Israeli dancehall MC MISS RED. He also invited Equiknoxx live (Gavsborg & Time Cow) to perform an instrumental dub session in the style of their two incredible albums. And he sent for grime veteran Grandmixxer, the Bristolian OSSIA, and Mr. Mitch who will perform one of his infamous 'techno dancehall' sets.</p>
                     </div>
                     </div>
                     <div class="all-col">
@@ -254,34 +260,27 @@ The Only Good System... is dedicated to the history and present of bass culture.
                 </div>
                 <div class="right-col">
                 <div class="content-text">
-                    <p class="ontime">Sonic warfare will be brought on in a sound tank clash by Nik Nowak. Nik Nowak is a German artist, musician and curator interested in sonic affects. His research examines the role that sound systems play as cultural transmitters and acoustic weapons. Nowak will present his new sonic behemoth “The Mantis”, a two-ton sound sculpture that rears up in a biomimetically hydraulic manoeuvre, preparing itself to do battle with Nowak’s earlier “Panzer” at a height of four meters. There will be live musical interventions by Nowak, as well as by She’s Drunk (a grime, R&B and ballroom project launched by Berlin-based French producer David Monnin) with queer New Yorker Le1f. There will also be performances by Infinite Livez from East London, up and coming rapper Ché and ALI.Keys from Detroit plus Awa Khiwe, one of the most interesting female voices of African Hip-Hop.<br/>
-                    <br/>Afterwards there will be an artist talk with Nik Nowak, moderated by Lisa Blanning.
+                    <p><span class="running-order">19:00 - 21:30 <span class="coloured"> SOUND TANK CLASH </span>BY NIK NOWAK</span><br/>Sonic warfare will be brought on in a sound tank clash by Nik Nowak. Nik Nowak is a German artist, musician and curator interested in sonic affects. His research examines the role that sound systems play as cultural transmitters and acoustic weapons. Nowak will present his new sonic behemoth “The Mantis”, a two-ton sound sculpture that rears up in a biomimetically hydraulic manoeuvre, preparing itself to do battle with Nowak’s earlier “Panzer” at a height of four meters. There will be live musical interventions by Nowak, as well as by She’s Drunk (a grime, R&B and ballroom project launched by Berlin-based French producer David Monnin) with queer New Yorker Le1f. There will also be performances by Infinite Livez from East London, up and coming rapper Ché and ALI.Keys from Detroit plus Awa Khiwe, one of the most interesting female voices of African Hip-Hop.<br/>
                     </p>
+                    <p><span class="running-order">22:00 <span class="coloured">ARTIST TALK</span> WITH NIK NOWAK</span><br/><span class="coloured">Moderated by Lisa Blanning</span></p>
                 </div>
                 </div>
                 <div class="all-col">
-                    <h4>19:00</h4>
+                    <h4>SOUND TANK CLASH LINE-UP</h4>
                     <p class="panzer1"><span class="panzer-name">THE MANTIS</span><br />
-                        <span class="ontime">Operator: <a href="http://niknowak.de/" alt="Nik Nowak" target="_blank">Nik Nowak</a> <br />
+                        <span class="ontime"><span class="running-order"><a href="http://niknowak.de/" alt="Nik Nowak" target="_blank">Nik Nowak</a> <br />
                         <a href="https://ninjatune.net/artist/infinite-livez" alt="Infinite Livez" target="_blank">Infinite Livez</a><br />
-                            <a href="https://www.facebook.com/africanwomenarise/" alt="AWA KHIWE" target="_blank">Awa Khiwe</a> <br />
-                            <br /></span>
+                            <a href="https://www.facebook.com/africanwomenarise/" alt="AWA KHIWE" target="_blank">Awa Khiwe</a> </span></span>
                     </p>
                     <p class="versus"><span class="coloured">vs.</span></p>
                     <p class="panzer1"><span class="panzer-name">PANZER</span><br />
-                            <span class="ontime">Operator: <a href="https://www.facebook.com/DRUNKSHES" alt="SHE'S DRUNK" target="_blank">She's drunk </a><br />
+                            <span class="ontime"><span class="running-order"><a href="https://www.facebook.com/DRUNKSHES" alt="SHE'S DRUNK" target="_blank">She's drunk </a><br />
                             <a href="https://realdetroitche.bandcamp.com/releases" alt="Ché" target="_blank">Detroit Ché</a><br />
-                            <a href="https://www.ctm-festival.de/festival-2019/artists/k-o/lisa-blanning/" alt="Lisa Blanning" target="_blank">ALI. Keys</a><br />
-                            <br /></span>
+                            <a href="https://www.ctm-festival.de/festival-2019/artists/k-o/lisa-blanning/" alt="Lisa Blanning" target="_blank">ALI. Keys</a></span></span>
                     </p>
-                    <div class="content-text-panzer">
-                        <p class="ontime">+ Dancers: Ashley Temba and Richie M.I.K.</p>
-                        <h4>22:00 </h4>
-                        <p>
-                         <span class="ontime">Artist Talk with Nik Nowak & Lisa Blanning</span>
-                        <a href="https://radialsystem.de" class="location-link">@ Radialsystem</a>
-                        </p>
-                    </div> 
+                    <p class="content-text-panzer running-order">
+                        + Dancers: <span class="coloured">Ashley Temba</span> & <span class="coloured">Richie M.I.K.</span></p>
+                    </p> 
                 </div>
                </div>
             </div>
@@ -307,7 +306,7 @@ The Only Good System... is dedicated to the history and present of bass culture.
                 <div class="content-buttons"><a class="facebook-button" href="https://www.facebook.com/events/418832745358603/" target="_blank">Facebook event</a><a class="tickets-button" href="https://radialsystem.reservix.de/p/reservix/event/1368950" target="_blank">Buy tickets</a></div>
                 <p class="running-order"><span class="time">18:00</span> - <span class="ontime">Keynote <a href="http://www.caribbeanstudiesassociation.org/carolyn-cooper/" alt="Carolyn Cooper" target="_blank">Carolyn Cooper (Kingston)</a><br/>Lyrical War: Clashing Sounds In Jamaican Dancehall Culture<br />
                         Moderation: <a href="https://www.byte.fm/team/klaus-walter/" alt="Klaus Walter" target="_blank">Klaus Walter</a><br />
-                        <a href="https://radialsystem.de" class="location-link">@ Radialsystem</a></span><br /><br />
+                        </span><br /><br />
                     <span class="time">20:00 - open end</span><br /><span class="ontime">Club Night on the Lion's Den Sound System
                         <span class="time">20:00 - 21:30</span> Sarah Farina<br />
                         <span class="time">21:30 - 22:30</span> <a href="https://www.carhartt-wip.com/journal/music/radio/2012/07/artist-feature-mark-ernestus-with-tikiman" alt="Mark Ernestus with Tikiman aka Paul St. Hill" target="_blank">Mark Ernestus with Tikiman</a><br />
@@ -315,13 +314,14 @@ The Only Good System... is dedicated to the history and present of bass culture.
                         <span class="time">00:10 - 01:00</span> <a href="http://www.throughmyspeakers.com/uta" alt="Uta" target="_blank">Uta</a><br />
                         <span class="time">01:00 - 02:00</span> <a href="https://pereraelsewhere.bandcamp.com/" alt="Perera Elsewhere" target="_blank">Perera Elsewhere</a><br />
                         <span class="time">02:00 - 3:00</span> <a href="https://www.facebook.com/BerceuseHeroique/" alt="KEMAΛ" target="_blank">KEMAL (Berceuse Heroique)</a><br />
-                        <span class="time">03:00 - 05:00</span> <a href="https://ikonika.bandcamp.com/" alt="Ikonika" target="_blank">Ikonika</a> B2B <a href="https://scratchadva.bandcamp.com/" alt="Scratcha DVA" target="_blank">Scratcha DVA / DVA Hi:Emotions</a><br />
+                        <span class="time">03:00 - 05:00</span> <a href="https://ikonika.bandcamp.com/" alt="Ikonika" target="_blank">Ikonika</a> B2B <a href="https://scratchadva.bandcamp.com/" alt="Scratcha DVA" target="_blank">Scratcha DVA</a><br />
                         <span class="time">5:00 - end</span> <a href="https://www.mixcloud.com/BCR_Radio/version-13-orson-hops-7-9-2016/" alt="Hops & Orson Version (Version)" target="_blank">Orson & Hops Version (Version)</a><br /></span></p>
                 </div>
                 <div class="right-col">
-                    <div class="content-text">
-                    <p class="on-time">Carolyn Cooper, a feminist, Professor of Literary and Cultural Studies and author of the books Noises in the Blood: Orality, Gender and the "Vulgar" Body of Jamaican Popular Culture (1993) and Sound Clash: Jamaican Dancehall Culture at Large (2004). The Skype talk will be about the sound system clash as an arena in which warring selectors detonate their arsenal of dubplates and establish dominance in the field. In Jamaica, the sound system clash becomes a warning signal indicative of contestation over public space in the wider society. Lyrics are the weapon of choice in this war, as the letter of the law clashes with the permissive body language of the streets. The dancehall sound clash enacts literal and metaphorical class warfare between uptown and downtown, between ‘decency’ and ‘vulgarity’, ‘culture’ and ‘slackness.’ The Skype conversation will be moderated by Klaus Walter.<br/><br/>
-                    Only artists devoted to the bass and dub archive are invited for the Club Night on Easter Sunday. At Yaam, they will show that between 50, 120, 140 and 160 beats per minute lie entire musical worlds, from trap, house, grime, drum 'n' bass, (roots) reggae, (post-) dubstep, future bass, 2 step, dancehall, UK garage, ghetto tech and rags to wonky and grime. On the Lion’s Den sound system, they will make sure the visitors will be swimming in bass. <br/><br/> 
+                    <div class="content-text">   
+                    <p><span class="running-order">18:00 <span class="coloured">KEYNOTE</span> CAROLYN COOPER <span class="coloured">| RADIALSYSTEM</span></span><br/>Carolyn Cooper, a feminist, Professor of Literary and Cultural Studies and author of the books Noises in the Blood: Orality, Gender and the "Vulgar" Body of Jamaican Popular Culture (1993) and Sound Clash: Jamaican Dancehall Culture at Large (2004). The Skype talk will be about the sound system clash as an arena in which warring selectors detonate their arsenal of dubplates and establish dominance in the field. In Jamaica, the sound system clash becomes a warning signal indicative of contestation over public space in the wider society. Lyrics are the weapon of choice in this war, as the letter of the law clashes with the permissive body language of the streets. The dancehall sound clash enacts literal and metaphorical class warfare between uptown and downtown, between ‘decency’ and ‘vulgarity’, ‘culture’ and ‘slackness.’ The Skype conversation will be moderated by Klaus Walter.</p>
+                    <p><span class="running-order">20:00 - 06:00 <span class="coloured">CLUB NIGHT | YAAM</span></span><br/>
+                    Only artists devoted to the bass and dub archive are invited for the Club Night on Easter Sunday. At Yaam, they will show that between 50, 120, 140 and 160 beats per minute lie entire musical worlds, from trap, house, drum 'n' bass, (roots) reggae, (post-) dubstep, future bass, 2 step, dancehall, UK garage, ghetto tech and rags to wonky and grime. On the Lion’s Den sound system, they will make sure the visitors will be swimming in bass. <br/><br/> 
                     </p>          
                 </div>
                 </div>
