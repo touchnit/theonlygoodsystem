@@ -523,6 +523,14 @@ width:63%;
     height:1.5vw;
 }
 
+.sponsor-b{
+    height:3vw !important;
+}
+
+.sponsor-sm{
+    height:1.3vw !important;
+}
+
 #impressum, #presse {
     text-align:left;
     font-size:1em;
@@ -668,7 +676,7 @@ body{
     }
     
     .squaring{
-        margin: 0 2%;
+        margin: 5px 0.5%;
         flex-basis:21%;
         width:100%;
     }
@@ -677,9 +685,17 @@ body{
         height:4vw;
     }
 
+    .sponsor-sm{
+        height:3.5vw !important;
+    }
+
     .hkf-sponsor img{
         height:20vw;
     }
+
+    .sponsor-b{
+    height:7vw !important;
+}
 
     .sponsors-logos{
         margin:0 0%;
