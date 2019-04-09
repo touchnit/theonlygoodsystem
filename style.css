@@ -531,6 +531,10 @@ width:63%;
     height:1.3vw !important;
 }
 
+.sponsor-m{
+    height:1.9vw !important;
+}
+
 #impressum, #presse {
     text-align:left;
     font-size:1em;
@@ -695,6 +699,9 @@ body{
 
     .sponsor-b{
     height:7vw !important;
+}
+.sponsor-m{
+    height:5vw !important;
 }
 
     .sponsors-logos{
