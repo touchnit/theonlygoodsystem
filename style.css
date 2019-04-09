@@ -301,7 +301,7 @@ width:63%;
 
 .artists{
     font-family: cubano, sans-serif;
-    text-align:justify;
+    text-align:center;
 }
 
 /* Each event specific colour */
@@ -320,6 +320,10 @@ width:63%;
 
 #event4 .coloured, #event4 .content-buttons, #event4 a, .event4.selected .menu-date-day {
     color: #fbb900;
+}
+
+#home .coloured {
+    color: #9A9070;
 }
 
 .flex-content {
