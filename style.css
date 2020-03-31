@@ -385,7 +385,7 @@ width:63%;
 }
 
 .accessibility-text
-{
+{       
     line-height:0.8em;
     text-align:left;
     flex-basis: 50%;
@@ -393,6 +393,7 @@ width:63%;
 }
 .accessibility-title
 {
+    font-weight:bold;
     font-size:1.1em;
     line-height:1.1em;
 }
