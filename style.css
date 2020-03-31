@@ -386,12 +386,17 @@ width:63%;
 
 .accessibility-text
 {
-    letter-spacing: 0.02em;
-    line-height:1em;
+    line-height:0.8em;
     text-align:left;
     flex-basis: 50%;
     display:inline-block;
 }
+.accessibility-title
+{
+    font-size:1.1em;
+    line-height:1.1em;
+}
+
 .centered{
     text-align:center !important;
 }
