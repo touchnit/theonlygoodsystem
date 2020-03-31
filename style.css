@@ -387,7 +387,7 @@ width:63%;
 .accessibility-text
 {
     letter-spacing: 0.02em;
-    line-height:1.4em;
+    line-height:1em;
     text-align:left;
     flex-basis: 50%;
     display:inline-block;
