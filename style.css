@@ -383,6 +383,16 @@ width:63%;
     flex-basis: 50%;
     display:inline-block;
 }
+
+.accessibility-text
+{
+    font-size: 0.5em;
+    letter-spacing: 0.02em;
+    line-height:1.4em;
+    text-align:left;
+    flex-basis: 50%;
+    display:inline-block;
+}
 .centered{
     text-align:center !important;
 }
